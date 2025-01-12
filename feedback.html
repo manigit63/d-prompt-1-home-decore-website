@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>feedback form</title>
+    <link rel="stylesheet" href="./feedback.css" />
+    <!-- <link rel="stylesheet" href="./practice.css" /> -->
+  </head>
+  <body>
+    <main>
+      <div class="feedback-card">
+        <h3>Give Feedback</h3>
+        <form action="#" id="feedbackForm">
+          <div class="scrollable">
+            <div class="form-group">
+              <!-- name -->
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="enter ful name"
+                required />
+              <br />
+              <!-- age -->
+              <label for="age">Age:</label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                min="10"
+                max="100"
+                placeholder="number only"
+                required  />
+              <br />
+              <!-- email -->
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for=""
+                >what do you think of the issue with the this project</label
+              >
+              <div>
+                <label>
+                  <input type="radio" name="rating" />
+                  <img src="./image/terrible.svg" alt="" />
+                  <span>terrible</span>
+                </label>
+                <label>
+                  <input type="radio" name="rating" />
+                  <img src="./image/bad.svg" alt="" />
+                  <span>bad</span>
+                </label>
+                <label>
+                  <input type="radio" name="rating" />
+                  <img src="./image/okay.svg" alt="" />
+                  <span>okay</span>
+                </label>
+                <label>
+                  <input type="radio" name="rating" />
+                  <img src="./image/good.svg" alt="" />
+                  <span>good</span>
+                </label>
+                <label>
+                  <input type="radio" name="rating" />
+                  <img src="./image/amazing.svg" alt="" />
+                  <span>amazing</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="reason"
+                >What are the main reason to your rating</label
+              >
+              <textarea name="reason" id="reason" cols="30" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" />
+                <p id="check-text">I have carefully read the</p>
+                <a href="">Privacy Policy</a>
+              </label>
+            </div>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" />
+                <p id="check-text">I would like to help improve by joining the</p>
+                <a href="">Research Group</a>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <button>Submit</button>
+            <button type="reset">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

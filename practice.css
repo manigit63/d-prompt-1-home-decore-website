@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  background-color: #eee;
+  font-size: 14px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-card {
+  border: 1px solid grey;
+  width: 30vw;
+  height: 70vh;
+  padding: 1rem;
+}
+
+/* scrollable effect */
+
+.scrollable{
+  max-height: 50vh;
+  margin: 1em 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.scrollable::-webkit-scrollbar{
+  width: 6px;
+}
+.scrollable::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+
+
+.form-group {
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+label {
+  display: block;
+}
+input,
+textarea {
+  padding: 0.3em;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #aaa;
+}
+/* emoji ___________________ */
+.emoji-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+label > input[type="radio"] {
+  display: none;
+}
+
+label > img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.5s, border-color 0.3s ;
+}
+
+label > input[type="radio"]:checked + img {
+  border-color: aquamarine;
+  transform: scale(1.1);
+}
+
+label> span{
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+/* btn ____________________ */
+button{
+  padding:2% 5%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #fff;
+}
+
+button[type="submit"]{
+  background-color: salmon;
+  
+  margin-left: 15%;
+}
+
+button[type="reset"]{
+  background-color: skyblue;
+  margin-left: 15%;
+}

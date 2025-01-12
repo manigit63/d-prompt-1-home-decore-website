@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>feedback practice</title>
+  <link rel="stylesheet" href="./practice.css" />
+
+
+
+</head>
+
+<body>
+  <main>
+    <div class="feedback-card">
+      <h1>feedback form</h1>
+      <div class="scrollable">
+        <form action="#" class="form-div">
+          <div class="form-group">
+            <label for="name">
+              Name:
+              <input type="text" />
+            </label>
+            <br />
+            <label for="age">
+              age:
+              <input type="number" />
+            </label>
+            <br />
+            <label for="email"> email: <input type="email" /> </label>
+          </div>
+
+          <div class="form-group">
+            <label for="reason">
+              main reason
+              <textarea name="reason" id="reason" cols="30" rows="4"></textarea>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <h4>Expresion:</h4>
+            <br>
+            <div class="emoji-box">
+            
+              <label for="bad">
+                <input type="radio" name="emoji" id="bad" />
+                <img src="./image/bad.svg" alt="" />
+                <span>bad</span>
+              </label>
+              <label for="okay">
+                <input type="radio" name="emoji" id="okay"/>
+                <img src="./image/okay.svg" alt="" />
+                <span>okay</span>
+              </label>
+              <label for="amazing">
+                <input type="radio" name="emoji" id="amazing" />
+                <img src="./image/amazing.svg" alt="" />
+                <span>amazing</span>
+              </label>
+            </div>
+          </div>
+      </div>
+      <div class="form-group">
+        <button type="submit">submit</button>
+        <button type="reset">Cancel</button>
+      </div>
+
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

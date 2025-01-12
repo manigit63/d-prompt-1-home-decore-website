@@ -1,0 +1,198 @@
+/* General form styles */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #f4f4f9; */
+
+  color: #555;
+  font-size: 14px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: url(./beach-background.jpg) no-repeat center center/cover;
+}
+
+.form-group::first-letter,
+span::first-letter {
+  text-transform: uppercase;
+}
+
+.feedback-card {
+  padding: 2rem;
+  width: 40vw;
+  height: 80vh;
+  margin: 1em;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.2);  
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Frosted Glass Effect */
+  -webkit-backdrop-filter: blur(10px);
+}
+
+h3 {
+  text-align: center;
+  color: #333;
+}
+
+/* scroll feature____________ */
+
+.scrollable {
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background-color: #bbb;
+}
+
+/* inner form css__________________ */
+.form-group {
+  margin-bottom: 1em;
+}
+
+label {
+  /* border: 2px solid salmon; */
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #aaa;
+}
+
+/* Age validation */
+input[type="number"]:invalid {
+  border-color: #dac6c4;
+  background-color: #ffffff;
+}
+
+input[type="number"]:valid {
+  border-color: #4caf50;
+  background-color: #e8f5e9;
+}
+
+/* Email validation */
+input[type="email"]:invalid {
+  border-color: #dac6c4;
+  background-color: #ffffff;
+}
+
+input[type="email"]:valid {
+  border-color: #4caf50;
+  background-color: #e8f5e9;
+}
+
+/*feedback radio buttons  _____________*/
+.form-group div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label > input[type="radio"] {
+  display: none;
+}
+
+label > img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: rgb(240, 228, 217);
+  cursor: pointer;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+label > input[type="radio"]:checked + img {
+  border-color: #4caf50;
+  transform: scale(1.1);
+}
+
+label > span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Privacy policy and research group checkboxes */
+label > input[type="checkbox"] {
+  width: 5%;
+}
+
+label > p {
+  display: inline;
+  text-align: center;
+}
+label > a {
+  text-decoration: none;
+}
+label > a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  background-color: #f44336;
+  color: #fff;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  margin-right: 10px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .feedback-card {
+    width: 100%;
+    padding: 0.2em;
+  }
+
+  label > img {
+    width: 30px;
+    height: 30px;
+  }
+}
